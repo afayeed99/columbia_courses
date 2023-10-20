@@ -1,1 +1,1 @@
-# columbia_courses
+I am a Chemical Engineering MS/PhD student at Columbia University, starting in Fall 2022 and set to graduate in May 2027. In this repo, you will find a list of advanced graduate-level courses that involve projects and coding. Please use my work as sources of inspiration and idea generation, but refrain from directly copying my work.
