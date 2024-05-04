@@ -1,0 +1,15 @@
+What you need to do:
+
+In this assignment you will create a Zipcode class. Your Zipcode class will have two constructors: 
+One will require a 5 digit Zip Code (int) as an explicit parameter and the other a bar code (String). 
+This is so you can create a Zipcode object using either a bar code or a Zip Code. 
+When a Zipcode object is instantiated it should automatically figure out the other representation, 
+bar code or Zip Code, so that a user can request either via an accessor.
+
+What you need to submit:
+
+Your program will consist of two classes: ZipTest and Zipcode. ZipTest is already written for you on Codio. 
+You must not change it and you should NOT submit it. A template for Zipcode is also on Codio. 
+You may wish to add methods or instance variables to your Zipcode class, that's fine.  
+Your final Zipcode class must work with the provided ZipTest class. Remember to also submit a README.txt file! 
+All you need to submit for this assignment is your Zipcode.java file and your README.txt file.
