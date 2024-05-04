@@ -1,0 +1,31 @@
+1. In this problem you will alter the AudioBook and AudioBookCollection classes we saw in lecture so that a 
+collection may be written to a file and then reloaded from that file in a future session. I have included all of the necessary files on Codio for your use.
+
+Step 1: Add a method to the AudioBook class
+public String summary()
+
+that returns a String containing all of the book information for a given book. Each piece of information should be on it’s own line. So for example for Reynold’s Revenger it would return:
+
+Revenger
+Alastair Reynolds
+Clare Corbett
+22.94
+880
+
+Step 2 Write a method in the AudioBookCollection class
+public void writeSummary(String fileName)
+
+that creates a new text file with the name specified by the explicit parameter that contains all of the summary information for all of the audiobooks in the collection.
+
+Step 3 Overload the constructor in the AudioBookCollection class with a new version
+public AudioBookCollection(String fileName)
+
+that creates a new AudioBookCollection object using all of the information in text file specified by the explicit parameter.
+
+Common Questions Here are some answers to some commonly asked questions about this problem and some tips:
+
+Q: Can I assume valid user input?
+A: Yes.
+
+Q: Can I assume that that a text file used for the new constructor will be in the same format as the one written by writeSummary?
+A: Yes.
