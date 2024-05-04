@@ -1,4 +1,5 @@
 **Scores I got for each HW:** <br>
+HW1 - 36/40 <br>
 HW2 - 39/40 <br>
 HW3 - 40/40 <br>
 HW4 - 40/40 <br>
@@ -11,6 +12,7 @@ HW10 - 36/40 <br>
 HW11 - 40/40 <br>
 
 **Comments made:** <br>
+**HW1:** comments in the pdf 
 **HW2:** Make sure lines are under 80 characters, this includes comments in line!
 if you need extra space then please use another line, comments do not count to 14 line max per method! <br>
 **HW6:** Did not compute average winnings. <br>
