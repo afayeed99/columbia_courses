@@ -1,0 +1,29 @@
+The file wordlist.txt contains almost 70,000 English words. I downloaded it from this websiteLinks to an external site.. 
+Write a class, WordLists in Java that generates useful word lists for Wordle players using this list.
+
+Your class should contain the following static methods:
+
+lengthN(ArrayList<String> words, int n): returns a new ArrayList of all length n Strings in the ArrayList words.
+
+letterAt(ArrayList<String> words, char included, int index): returns a new ArrayList of all elements in words that have the letter included at position index. 
+So for example if myList=["happy", "salad", "super", “plans”], letterAt(mylist, 'p',2) would return the list ["happy", “super”].
+
+notAt(ArrayList<String> words, char included, int index): returns a new ArrayList of all elements in words that include the letter included but not at position index. 
+So for example if myList=["happy", "salad", "super", “plans”], notAt(mylist, 'p',2) would return the list [“plans”].
+
+notIn(ArrayList<String> words, char included): returns a new ArrayList of all elements in words that do not include the letter included anywhere. 
+So for example if myList=["happy", "salad", "super", “plans”], notIn(mylist, 's') would return the list [“happy”].
+
+Use the included templates for your WordLists.java file and your test class, WordTest.java. 
+In your test class create a master word list called master by reading the text file wordlist.txt and then try the following sequence of method invocations:
+
+ArrayList<String> myList=WordLists.lengthN(master,4);
+myList=WordLists.letterAt(myList,'j',0);
+myList=WordLists.notAt(myList,'v',1);
+myList=WordLists.notIn(myList,'e');
+myList=WordLists.notIn(myList,'i');
+Have your test class write the strings (and only the strings!) contained in the ArrayList myList to a text file called out.txt. 
+If your methods are working, the file out.txt should have only one word in it. To grade your project we will use our own test
+classes with our own combination of method calls. You should do more than this one simple test to make sure your code is working but the WordTest.java 
+file that you submit should only do what is described above. Your test class must also use a try-catch structure to handle a FileNotFoundException and 
+terminate your program gracefully in the event that the wordList.txt file is missing.
