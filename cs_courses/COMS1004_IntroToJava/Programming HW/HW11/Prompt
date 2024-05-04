@@ -1,0 +1,35 @@
+Problem 1 - 10 points
+Zybook Programming Exercise 10.13.8
+In the file Problem1.java implement a static method with the signature:
+
+public static boolean find(String text, String str)
+
+Your method should recursively test whether a given text contains a string. For example find("Mississippi", "sip") returns true. 
+You may not use the contains method of the String class for this. If you do, you will not earn credit.
+
+Hint: If the text starts with the string you want to match, then you are done. If not, consider the text that you obtain by removing the first character.
+
+Your method must work in the main method provided in the Problem1.java file. Do not alter the main method!
+
+Problem 2 - 10 points
+Zybook Programming Exercise 10.13.10
+In the file Problem2.java implement a static method with the signature:
+
+public static int findLargest(int[] a, int n)
+
+Your method should recursively find the largest value in an array of integers and return that value. You may assume that each value appears in the array only once.
+
+Hint: Find the largest element in the subset containing all but the last element. Then compare that maximum to the value of the last element.
+
+Your method must work in the main method provided in the Problem2.java file. Do not alter the main method!
+
+Problem 3 - 20 points
+In the file Problem3.java implement a a recursive version of binary search that searches the array a for the target x using a static method with the signature:
+
+public static int binarySearch(Comparable[] a, Comparable x)
+
+Your method should return the index of the element if it’s found (you may assume that each element appears only once in the array). Return -1 if the element is not found.
+
+You may find it very beneficial to use a helper method that performs the recursive search on a portion of the array. this helper method would have a method signature like this:
+
+private static int binaryHelper(Comparable[] a, Comparable x, int start, int end)
