@@ -12,7 +12,7 @@ HW10 - 36/40 <br>
 HW11 - 40/40 <br>
 
 **Comments made:** <br>
-**HW1:** comments in the pdf 
+**HW1:** comments in the pdf <br>
 **HW2:** Make sure lines are under 80 characters, this includes comments in line!
 if you need extra space then please use another line, comments do not count to 14 line max per method! <br>
 **HW6:** Did not compute average winnings. <br>
