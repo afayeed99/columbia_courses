@@ -1,5 +1,4 @@
-Problem 1 - 10 points
-Zybook Programming Exercise 10.13.8
+1. Zybook Programming Exercise 10.13.8
 In the file Problem1.java implement a static method with the signature:
 
 public static boolean find(String text, String str)
@@ -11,8 +10,7 @@ Hint: If the text starts with the string you want to match, then you are done. I
 
 Your method must work in the main method provided in the Problem1.java file. Do not alter the main method!
 
-Problem 2 - 10 points
-Zybook Programming Exercise 10.13.10
+2. Zybook Programming Exercise 10.13.10
 In the file Problem2.java implement a static method with the signature:
 
 public static int findLargest(int[] a, int n)
@@ -23,8 +21,7 @@ Hint: Find the largest element in the subset containing all but the last element
 
 Your method must work in the main method provided in the Problem2.java file. Do not alter the main method!
 
-Problem 3 - 20 points
-In the file Problem3.java implement a a recursive version of binary search that searches the array a for the target x using a static method with the signature:
+3. In the file Problem3.java implement a a recursive version of binary search that searches the array a for the target x using a static method with the signature:
 
 public static int binarySearch(Comparable[] a, Comparable x)
 
