@@ -18,3 +18,15 @@ Full House - Three of a kind and a pair, for example three queens and two 5’s.
 Four of a Kind - Four cards of the same rank, such as four queens. Payout: 25 tokens. (player wins)
 Straight Flush - A straight and a flush: Five cards with consecutive ranks all of the same suit. Payout: 50 tokens. (player wins)
 Royal Flush - The best possible hand. A straight flush that begins with rank 10 and ends with ace. Payout: 250 tokens. (player wins)
+
+Common Questions:
+a) The suit order is clubs (1), diamonds (2), hearts (3), and spades (4) (It’s alphabetical)
+b) When you implement the compareTo( ) method, you must first compare cards by their rank. Check the suit only if the rank is equal.
+c) You should check that the user is betting between 1 and 5 tokens but you you can otherwise assume good user input.
+d) Players should be able to play more than one game in a session and their winnings or losses should carry over.
+e) It is important that you use the approach for encoding cards on the command-line that is described by the comments in the Game class. That is, s1 for ace of spades, s2 for two of spades etc…
+f) Shuffle the deck after every hand.
+g) The testPlay method only needs to evaluate the hand provided on the command-line. It does not need to play an actual game or allow the user to play again or anything like that.
+h) Do not change the skeleton code. In particular you may be tempted to make checkHand private, but we need it public to work with the autograder.
+i) Users must place a bet before each hand before they seeing their cards.
+j) Straights do not wrap around so J Q K A 2 is invalid, but 10, J, Q, K, A is valid.
