@@ -1,7 +1,6 @@
 # **COMS W1004 - Introduction To Computer Science (Java)** <br>
 
-Taken in Spring 2024.
-Overall grade in the class: 98/100
+## Taken in Spring 2024. Overall grade in the class: 98/100
 
 Grades breakdown: <br>
 Zybook assignment and participation - 10% <br>
