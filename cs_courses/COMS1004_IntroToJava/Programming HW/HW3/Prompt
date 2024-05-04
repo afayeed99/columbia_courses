@@ -1,0 +1,35 @@
+1. Do Practice Exercise 4.21.1 on Zybook. 
+For this problem you should edit the five template files named E1a.java, 
+E1b.java, E1c.java, E1d.java, and E1e.java that are on Codio. 
+No object-oriented structure is required here. This is just an exercise in using loops.
+
+2. Write a BankTest class whose main method constructs a BankAccount object, deposits $10,000, 
+withdraws $600, withdraws another $200, and then prints the remaining balance. 
+I have included the BankAccount.java file from lecture on Codio. 
+You must complete the provided BankTest.java file. 
+This one should not be very difficult given what we have done in lecture.
+
+3. Write a class Car with two instance variables, one for the gas mileage in miles per gallon and one 
+for the gas in gallons remaining in the tank. The gas mileage should be specified in the Car constructor 
+and the gas remaining in the tank should be initialized to zero when a new Car object is instantiated. 
+Write a constructor and three methods: drive, addGas and gasLeft. The method drive is a mutator that
+reduces the amount of gas in the tank when the car is driven a specified distance in miles using 
+the gas mileage to determine by exactly how much. You can assume that the distance specified is 
+always within the current range of the car given the current amount of gas in the tank. 
+The method addGas is a mutator method that adds a specified amount of gas in gallons to the tank. 
+The method gasLeft is an accessor method that returns the amount of gas currently lef in the tank. 
+I have provided a test class, CarTester.java, for your Car class. Your class must work with this 
+test class and you must not change this test class. I have also provided a template Car.java that 
+you should use when making your Car class.
+
+4. Do Practice Exercise 5.24.3 on Zybook. Use the provided Circuit.java file for making your Circuit class. 
+Your class must work with the provided test class CircuitTest.java and you must not alter this test class.
+Simulate a circuit for controlling a hallway light that has switches at both ends of the hallway. 
+Each switch can be up or down, and the light can be on or off. 
+Toggling either switch turns the lamp on or off. Provide methods
+
+public int getFirstSwitchState() // 0 for down, 1 for up
+public int getSecondSwitchState()
+public int getLampState() // 0 for off, 1 for on
+public void toggleFirstSwitch()
+public void toggleSecondSwitch()
