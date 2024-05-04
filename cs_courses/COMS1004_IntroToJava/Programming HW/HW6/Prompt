@@ -1,0 +1,90 @@
+The Game
+Consider the following game between two players: Both players simultaneously declare “one” or "two". 
+Player 1 wins if the sum of the two declared numbers is odd and Player 2 wins if the sum is even. 
+In either case the loser is obliged to pay the winner (in tokens) the sum of the two declared numbers. 
+So Player 1 may have to pay 2 or 4 tokens or may win 3 tokens. You can imagine a single session between 
+two players involving many games. At the end of a session, one player may have won many tokens from the other.
+
+Part 1 (25 points)
+Write a computer program in Java that allows a user to play a session (many games) against the computer. 
+Both players should begin with 0 tokens and play until the human wants to quit. (Note: this means that one 
+player will have a negative amount of tokens at the end and one player will have a positive amount.) 
+When the human quits, the number of tokens each player has should be displayed before ending the session. 
+The human should be given the choice to be either the “odd” or “even” player. The computer’s strategy will be as follows. 
+A computer player will have a threshold variable, t. The computer will generate a random number between 0 and 1. 
+If the number is greater than t the computer will declare “two” if the random number is less than t the computer 
+will declare "one". I have included templates for a Game class, a ComputerPlayer class and a test class, 
+OddEven on Codio. The Game class should “run” the game and interact with the human player. The ComputerPlayer 
+class should encapsulate all things related to the computer player, this means storing its threshold value, 
+generating its move, and keeping track of its tokens. Note that there is no class for the human player as this 
+can be handled easily enough in the Game class. We will discuss the design parameters of the Game and ComputerPlayer 
+classes at the end of Lecture 13 so be sure to pay attention in class or rewatch the recording.
+
+Part 2: Odd-Even Simulation (25 points)
+Your goal in this Part is to determine whether or not this is a fair game. That is, is it better to be Player 1 or 
+Player 2 or does it matter? To do this edit the Game class so that it also allows two computer players to play a game 
+against each other. Do this by overloading the constructor so that when a game is instantiated one may specify whether 
+or not it is interactive or simulated. Since both players are computers in a simulated game each computer player will 
+be a different object with its own threshold (instance) variable t and its own score (tokens won or lost so far in a session).
+
+Write a second test class called Simulation that allows you to run some simulations (play many games of computer versus computer) 
+using various combinations of the threshold variable t for each player. A single simulated game need not print or return anything. 
+Check to see how much each player loses or wins for each combination of thresholds after many games. Is it better to be the odd player? 
+The even player? Does it matter? Better here means that if enough games are played there is a strategy (strategy = threshold value) 
+that one player can use that guarantees positive average outcome regardless of the other player’s strategy. 
+We call it a fair game if there is no such strategy for either player. By using the computer vs. computer option 
+in your program set up some extended sessions of computer vs. computer to test different combinations of 
+Player 1’s t and Player 2’s t (Hint: use a nested for loop structure to vary each player’s threshold). 
+Determine if either player has an advantage and if so which player it is and determine a threshold value t* that demonstrates the advantage. 
+I have included a sample test class for this part called SimTest. You should not alter this class and your code must work with it. 
+We will test your code using something similar to this. There is no need for you to submit SimTest.java with your work, 
+it is there as a check for you to make sure your program will be compatible with our tester.
+
+Your README.txt file is super important this time: Your README.txt file should include an explanation of what you did for each part. 
+That is, write in plain English, instructions for using your software, explanations for how and why you chose to design your code the way you did, 
+and most importantly how you used your simulations to determine whether or not the game was fair and the outcomes of your experiments. 
+This means if you found a threshold value that gives one player an edge, tell us what it is! Finally, you should also cite the names 
+of students you worked with and any external sources or tools that you used in your readMe. Use the usual submission instructions for submitting the assignment.
+
+Common Questions Here are some answers to some commonly asked questions about this problem and some tips:
+
+Q: Am I allowed to use different instance variables/move instance variables from one class to another?
+A: You can add new instance variables if you wish. You should not be moving predefined instance variables 
+from one class to another. In general, you may add to but please refrain from changing any of the scaffolding. 
+Also keep in mind that things are set up the way they are to encourage you to use an object-oriented approach.
+
+Q: Can I assume valid user input?
+A: Yes.
+
+Q: Should the user be able to pick whether they are P1 or P2 in the interactive game?
+A: Yes.
+
+Q: Are tokens/scores cumulative?
+A: Yes. A single session consists of many games. You must keep track of the total number of tokens won or lost 
+across games in a single session. When the human chooses to quit the session, the number of tokens that each 
+player has should be displayed before ending the session. The next time you run your program, both players will start with 0 again.
+
+Q: Is Player 1 always the Human?
+A: No. Player 1 is always the “odd” player and Player 2 is always the “even” player. The human should choose which one they wish to play as.
+
+Q: Do I need to or should I be using arrays to keep track of average winnings for different threshold combinations?
+A: No. Remember you don’t need to keep track of the average winnings for every combination. Just the max-min. 
+That is, you just need to know which strategy guarantees the maximum minimum return.
+
+Q: What the heck does maximum minimum return mean?
+A: Suppose Player 1 chooses a strategy (t=.6, for example). Player 2 will now want to choose a strategy that minimizes 
+Player 1’s average winnings over many games (ie: maximizes Player 2’s average winnings). 
+Maybe that’s strategy t=.5, maybe it’s t=.65, whatever it is, that’s Player 2’s optimal strategy 
+given Player 1 playing with strategy t=.6 and that’s the minimum return Player 1 can expect in the 
+long run when playing with strategy t=.6 for many games. If that minimum is a positive number it means the game is not fair 
+because it means that if Player 1 plays with strategy t=.6, no matter what Player 2 does, Player 1 will win tokens in the long run. 
+So Player 1 wants to find a strategy (a value for t), among all possible strategies, that has a minimum return that’s positive. 
+More generally Player 1 wants to maximize their minimum return. Of course Player 2 wants to do the same. 
+If either player can find a strategy with a positive valued max-min return, then the game is not fair. 
+If you don’t follow this, don’t worry. We’re also going to discuss this in lecture.
+
+Q: Do we need to find the optimal thresholds for both the odd and even player?
+A: Just for the player with an advantage if there is one.
+
+Q: Do we need to print out the average winnings?
+A: Yes
