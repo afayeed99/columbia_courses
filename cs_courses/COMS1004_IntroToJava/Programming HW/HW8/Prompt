@@ -1,0 +1,20 @@
+Implement a version of video poker. In this game we start with a full deck of 52 standard playing cards. 
+Each card belongs to one of four suits: Clubs, Diamonds, Hearts, or Spades, and has a rank chosen from the set 
+{2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace}. Before each game, the deck is shuffled and player bets 1-5 tokens. 
+If a player bets n tokens and they win, (see below) they are paid n times the payout listed next to the hands below. 
+To start the game the top five cards of the deck are presented to the player. These make up the player’s hand. 
+After receiving all five cards the player can choose to reject none, some, or all of the cards. 
+After choosing which cards to accept and reject, the rejected cards are replaced by the cards at the top of the deck. 
+Now the hand is evaluated. Your program should determine the hand to be one of the following:
+
+No pair - The lowest hand. Five separate cards that do not match up to create any of the hands listed below. Payout: 0 tokens. (player loses)
+One pair - Two cards of the same rank, for example two queens. Payout: 1 token. (player ties)
+Two pairs - Two pairs, for example two queens and two 5’s. Payout: 2 tokens. (player wins)
+Three of a kind - Three cards of the same rank, for example three queens. Payout: 3 tokens. (player wins)
+Straight - Five cards with consecutive ranks, not necessarily of the same suit for example 4,5,6,7, and 8. 
+The ace can either precede a 2 or follow a king. Payout: 4 tokens. (player wins)
+Flush - Five cards, non necessarily in order, of the same suit. Payout: 5 tokens. (player wins)
+Full House - Three of a kind and a pair, for example three queens and two 5’s. Payout: 6 tokens. (player wins)
+Four of a Kind - Four cards of the same rank, such as four queens. Payout: 25 tokens. (player wins)
+Straight Flush - A straight and a flush: Five cards with consecutive ranks all of the same suit. Payout: 50 tokens. (player wins)
+Royal Flush - The best possible hand. A straight flush that begins with rank 10 and ends with ace. Payout: 250 tokens. (player wins)
