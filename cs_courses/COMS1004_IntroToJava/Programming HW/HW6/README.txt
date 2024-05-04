@@ -103,3 +103,9 @@ the Simulation.java is run multiple times. The actual token balance changes,
 but the conclusion made above remains, where Player 1 will have the advantage
 to win the game with a threshold of 0.58 or 0.59, which suggests that 100,000
 games per threshold pair is large enough that minimizes the simulation error.
+
+The average winning is the ratio between the minimum score the player with
+advantage get with the total number of simulation (in this case, 100000 games)
+for each threshold pair. For t1 = 0.58, the average winning for player 1 is 
+0.044, while for t1 - 0.59, the average winning is 0.042.
+
