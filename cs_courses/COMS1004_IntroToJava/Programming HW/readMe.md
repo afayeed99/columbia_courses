@@ -1,5 +1,5 @@
 **Scores I got for each HW:** <br>
-HW1 - 36/40 <br>
+HW1 - 36/40 (score dropped) <br>
 HW2 - 39/40 <br>
 HW3 - 40/40 <br>
 HW4 - 40/40 <br>
