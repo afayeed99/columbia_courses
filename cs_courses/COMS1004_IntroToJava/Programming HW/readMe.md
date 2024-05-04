@@ -17,4 +17,6 @@ if you need extra space then please use another line, comments do not count to 1
 **HW8:** royal flush test case returns straight flush <br>
 **HW10:** notAt() Test #2 (0/2) - String index out of range: 3. letterAt() Test #2 (0/2) - String index out of range: 5
 
+Codes uploaded here have been fixed based on the comments made above.
+
 
