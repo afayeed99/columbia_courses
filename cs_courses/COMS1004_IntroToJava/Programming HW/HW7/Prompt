@@ -1,0 +1,25 @@
+Video Poker Part 1 (adapted from Cay Horstmann’s Big Java)
+
+You must follow the instructions below to receive credit for this assignment.
+
+Implement Card  and Deck classes in Java. These classes will be for use in the Video Poker project of Homework 8. 
+A deck of standard playing cards consists of 52 cards. Each card belongs to one of four suits: 
+Clubs, Diamonds, Hearts, or Spades, and has a rank chosen from the set {2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace}.
+
+Your Card class will have instance variables for suit and rank. Use the int type for both. 
+Suits are ordered alphabetically: Clubs (1), Diamonds (2), Hearts (3), and Spades (4). 
+Rank will be an integer from 1 to 13. Your Card class must implement the Comparable interface and must have a toString( ) method. 
+Cards should be compared based on rank, the smaller the rank the smaller the card. In case of a tie, 
+use the suit to break the tie with Clubs coming before Diamonds before Hearts before Spades. 
+For example the 3 of Hearts is smaller than the 3 of Spades.
+
+Your Deck class must have the following methods:
+
+shuffle( ) - mixes up the deck and resets the top
+deal( ) - returns the top card from the deck
+toString( ) - prints the entire deck in its current order
+
+Answers to Common Questions:
+a) The suit order is clubs (1), diamonds (2), hearts (3), and spades (4) (It’s alphabetical)
+b) When you implement the compareTo( ) method, you must first compare cards by their rank. Check the suit only if the ranks are equal.
+c) Do not change the skeleton code
