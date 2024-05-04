@@ -1,6 +1,12 @@
 1. Do Practice Exercise 4.21.3 on Zybook. For this problem you should edit the five template files named E3a.java, 
 E3b.java, E3c.java, E3d.java, and E3e.java that are on Codio. No object-oriented structure is required here. 
 This is just an exercise in loops and string manipulation.
+Write programs that read a line of input as a string and print
+a) Only the uppercase letters in the string.
+b) Every second letter of the string.
+c) The string, with all vowels replaced by an underscore.
+d) The number of vowels in the string.
+e) The positions of all vowels in the string.
 
 Please read:
 Here are some answers to some commonly asked questions about this problem:
